@@ -82,7 +82,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     /*color: #fff;*/
-    background: #e7e7e7;
+    background: #2F2F33;
 }
 
 header .container {
@@ -101,6 +101,10 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+}
+
+figcaption{
+    color: #4183C5;
 }
 
 header .intro-text .skills {
@@ -181,7 +185,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #6B7681;
+    background: #77dd77;
 }
 
 @media(max-width:767px) {
@@ -322,7 +326,8 @@ section.success {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
+    /*border-top: 1px solid #eee;*/
+    color: white;
 }
 
 footer {
@@ -647,4 +652,17 @@ footer .footer-below {
     .timeline>li.timeline-inverted>.timeline-panel {
         /*padding: 0 100px 20px 20px;*/
     }
+}
+
+.colorGreen{
+    background-color: #EDEDDE;
+}
+
+.colorBlue{
+    background-color: #ffb347;
+    color: #2F2F33;
+}
+
+label{
+    color: white!important;
 }
