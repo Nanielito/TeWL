@@ -1,5 +1,5 @@
 
-function index(){
+function index() {
 	'use stric'
 
 	var htmlEquipo = '', htmlPortafolio = '';
@@ -9,29 +9,69 @@ function index(){
 	]
 
 	var equipo = [
-		{name:'deyvid', img:'deyvid.png', page:'', fullName:'Deyvid Martínez', responsable: 'Lider - Desarrollador'},
-		{name:'daniel', img:'daniel.png', page:'',fullName:'Daniel Ramírez', responsable: 'Desarrollador'},
-		{name:'enrique', img:'eyt.jpg', page:'EYT.html',fullName:'Enrique Yépez', responsable: 'Desarrollador'}
+		{
+            name      : 'deyvid',
+            img       : 'quienesomos/deyvid.png',
+            page      : '',
+            fullName  : 'Deyvid Martínez',
+            position  : 'Lider - Desarrollador',
+            facebook  : '',
+            twitter   : '',
+            instagram : '',
+            linkedin  : '',
+            github    : '',
+        },
+		{
+            name      : 'daniel',
+            img       : 'quienesomos/daniel.png',
+            page      : '',
+            fullName  : 'Daniel Ramírez',
+            position  : 'Desarrollador',
+            facebook  : '',
+            twitter   : '',
+            instagram : '',
+            linkedin  : '',
+            github    : '',
+        },
+		{
+            name      :'enrique',
+            img       :'quienesomos/enrique.png',
+            page      :'EYT.html',
+            fullName  :'Enrique Yépez',
+            position  :'Desarrollador',
+            facebook  : '',
+            twitter   : '',
+            instagram : '',
+            linkedin  : '',
+            github    : '',
+        }
 	]
 
 	for(var i in equipo){
 		
 		htmlEquipo +=
-			'<div class="col-md-4">'+
-                '<a href="'+equipo[i].page+'" target="_blank" >'+
-                  '<div>'+
-                    '<figure>'+
-                    	'<div class="timeline-image">' +
-                            '<img src="img/'+equipo[i].img+'" style="margin: 0 auto;" class="img-circle img-responsive" alt="">'+
-                        	'<figcaption></figcaption>'+
-                        '</div>' +
-                    '</figure>'+
-                     '<h4>'+equipo[i].fullName+'</h4>'+
-	                    '<p class="text-muted">'+equipo[i].responsable+'</p>'+
-                  '</div>'+
+			'<div class="col-md-4">' +
+                '<a href="' + equipo[i].page + '" target="_blank" >' +
+                    '<div>'+
+                        '<figure>' +
+                            '<div class="timeline-image">' +
+                                '<img src="img/' + equipo[i].img + '" height="300" width="300" style="margin: 0 auto;" class="img-circle img-responsive" alt="">' +
+                                '<figcaption></figcaption>' +
+                            '</div>' +
+                        '</figure>'+
+                        '<br>' +
+                        '<h5>' + equipo[i].fullName + '</h5>' +
+                        '<p class="text-muted">'+ equipo[i].position + '</p>'+
+                        '<ul class="social list-inline">' +
+                            '<li><a target="_blank" href="' + equipo[i].facebook + '"><i class="fa fa-facebook"></i></a></li>' +  
+                            '<li><a target="_blank" href="' + equipo[i].twitter + '"><i class="fa fa-twitter"></i></a></li>' +
+                            '<li><a target="_blank" href="' + equipo[i].instagram + '"><i class="fa fa-instagram"></i></a></li>' +
+                            '<li><a target="_blank" href="' + equipo[i].linkedin + '"><i class="fa fa-linkedin"></i></a></li>' +
+                            '<li class="last-item"><a target="_blank" href="' + equipo[i].github + '"><i class="fa fa-github-alt"></i></a></li>' +
+                        '</ul>' +
+                    '</div>'+
                 '</a>'+
             '</div>'
-
 	}
 
 	for(var i in portafolio){
