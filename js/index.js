@@ -18,11 +18,13 @@ function index(){
 		
 		htmlEquipo +=
 			'<div class="col-md-4">'+
-                '<a href="'+equipo[i].page+'">'+
+                '<a href="'+equipo[i].page+'" target="_blank" >'+
                   '<div>'+
                     '<figure>'+
-                        '<img src="img/'+equipo[i].img+'" target="_blank" style="margin: 0 auto;" class="img-responsive" alt="">'+
-                        '<figcaption>'+equipo[i].name+'</figcaption>'+
+                    	'<div class="timeline-image">' +
+                            '<img src="img/'+equipo[i].img+'" style="margin: 0 auto;" class="img-circle img-responsive" alt="">'+
+                        	'<figcaption>'+equipo[i].name+'</figcaption>'+
+                        '</div>' +
                     '</figure>'+
                   '</div>'+
                 '</a>'+
