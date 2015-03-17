@@ -9,9 +9,9 @@ function index(){
 	]
 
 	var equipo = [
-		{name:'deyvid', img:'deyvid.png', page:''},
-		{name:'daniel', img:'daniel.png', page:''},
-		{name:'enrique', img:'eyt.jpg', page:'EYT.html'}
+		{name:'deyvid', img:'deyvid.png', page:'', fullName:'Deyvid Martínez', responsable: 'Lider - Desarrollador'},
+		{name:'daniel', img:'daniel.png', page:'',fullName:'Daniel Ramírez', responsable: 'Desarrollador'},
+		{name:'enrique', img:'eyt.jpg', page:'EYT.html',fullName:'Enrique Yépez', responsable: 'Desarrollador'}
 	]
 
 	for(var i in equipo){
@@ -23,12 +23,15 @@ function index(){
                     '<figure>'+
                     	'<div class="timeline-image">' +
                             '<img src="img/'+equipo[i].img+'" style="margin: 0 auto;" class="img-circle img-responsive" alt="">'+
-                        	'<figcaption>'+equipo[i].name+'</figcaption>'+
+                        	'<figcaption></figcaption>'+
                         '</div>' +
                     '</figure>'+
+                     '<h4>'+equipo[i].fullName+'</h4>'+
+	                    '<p class="text-muted">'+equipo[i].responsable+'</p>'+
                   '</div>'+
                 '</a>'+
             '</div>'
+
 	}
 
 	for(var i in portafolio){
