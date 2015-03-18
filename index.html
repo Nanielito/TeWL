@@ -256,7 +256,7 @@
                                             <div class="timeline-panel">
                                                 <div class="timeline-heading">
                                                     <h4></h4>
-                                                    <h4 class="subheading">¿Problemas sin solución? unete a nuestra red social!</h4>
+                                                    <h4 class="subheading"  style="color:#333;">¿Problemas sin solución? unete a nuestra red social!</h4>
                                                 </div>
                                                 <div class="timeline-body">
                                                     <p class="text-muted">Descripción</p>
@@ -270,7 +270,7 @@
                                             <div class="timeline-panel">
                                                 <div class="timeline-heading">
                                                     <h4></h4>
-                                                    <h4 class="subheading">Informa a las autoridades</h4>
+                                                    <h4 class="subheading"  style="color:#333;">Informa a las autoridades</h4>
                                                 </div>
                                                 <div class="timeline-body">
                                                     <p class="text-muted">Descripción</p>
@@ -284,7 +284,7 @@
                                             <div class="timeline-panel">
                                                 <div class="timeline-heading">
                                                     <h4></h4>
-                                                    <h4 class="subheading">Obten una foto y enviala!</h4>
+                                                    <h4 class="subheading"  style="color:#333;">Fotografía el problema y notificalo!</h4>
                                                 </div>
                                                 <div class="timeline-body">
                                                     <p class="text-muted">Descripción</p>
@@ -297,11 +297,11 @@
                                             </div>
                                             <div class="timeline-panel">
                                                 <div class="timeline-heading">
-                                                    <h4>La solución este en proceso.</h4>
+                                                    <h4 style="color:#333;">La solución esta en proceso.</h4>
                                                     <h4 class="subheading"></h4>
                                                 </div>
                                                 <div class="timeline-body">
-                                                    <p class="text-muted">Descripción</p>
+                                                    <p class="text-muted">Cuando el inconveniente este solucionado te notificaremos!</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -317,27 +317,27 @@
 
     
 
-<video width="360" height="203" id="player1" src="https://www.youtube.com/watch?v=A4R78xC1AnE" type="video/youtube" controls></video>
+                                <video width="360" height="203" id="player1" src="https://www.youtube.com/watch?v=A4R78xC1AnE" type="video/youtube" controls></video>
 
-    
-<script>
-MediaElement('player1', {success: function(me) {
-    
-    me.play();
-    
-    me.addEventListener('timeupdate', function() {
-        document.getElementById('time').innerHTML = me.currentTime;
-    }, false);
-    
-    document.getElementById('pp')['onclick'] = function() {
-        if (me.paused)
-            me.play();
-        else
-            me.pause();
-    };
+                                    
+                                <script>
+                                MediaElement('player1', {success: function(me) {
+                                    
+                                    me.play();
+                                    
+                                    me.addEventListener('timeupdate', function() {
+                                        document.getElementById('time').innerHTML = me.currentTime;
+                                    }, false);
+                                    
+                                    document.getElementById('pp')['onclick'] = function() {
+                                        if (me.paused)
+                                            me.play();
+                                        else
+                                            me.pause();
+                                    };
 
-}});
-</script>
+                                }});
+                                </script>
                             </div>
 
 
